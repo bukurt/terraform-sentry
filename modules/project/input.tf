@@ -10,7 +10,7 @@ variable "teams" {
 }
 
 variable "project_name" {
-  description = " The human readable name for the project."
+  description = " The human readable name for the project. Naming rule is resticted to have same name for both project name and prohect slug"
   type        = string
   validation {
     condition     = can(regex("^[a-z]+[a-z0-9]+-?[a-z0-9]+", var.project_name))
@@ -34,6 +34,12 @@ variable "project_resolve_age" {
   description = "Hours in which an issue is automatically resolve if not seen after this amount of time."
   type        = string
   default     = null
+}
+
+variable "default_rules" {
+  description = "Whether to create a default issue alert. Defaults to true where the behavior is to alert the user on every new issue."
+  type = bool
+  default = false
 }
 
 # sentry_key resource variables
@@ -61,4 +67,12 @@ variable "key_rate_limits" {
       window = "60"
     }
   }
+}
+
+# output
+
+variable "print_keys" {
+  description = "Print keys as clear text or masked"
+  type = bool
+  default = false
 }
