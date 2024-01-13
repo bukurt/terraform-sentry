@@ -38,8 +38,8 @@ variable "project_resolve_age" {
 
 variable "default_rules" {
   description = "Whether to create a default issue alert. Defaults to true where the behavior is to alert the user on every new issue."
-  type = bool
-  default = false
+  type        = bool
+  default     = false
 }
 
 # sentry_key resource variables
@@ -73,6 +73,6 @@ variable "key_rate_limits" {
 
 variable "print_keys" {
   description = "Print keys as clear text or masked"
-  type = bool
-  default = false
+  type        = bool
+  default     = false
 }

@@ -17,6 +17,6 @@ variable "sentry_base_url" {
 
 variable "print_keys" {
   description = "Print keys as clear text or masked"
-  type = bool
-  default = false
+  type        = bool
+  default     = false
 }

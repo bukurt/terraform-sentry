@@ -3,13 +3,13 @@ data "sentry_organization" "main" {
 }
 
 resource "sentry_project" "sentry_project" {
-  organization = var.org
-  teams        = var.teams
-  name         = var.project_name
-  slug         = var.project_slug != null ? var.project_slug : null
-  platform     = var.platform != null ? var.platform : null
-  resolve_age  = var.project_resolve_age != null ? var.project_resolve_age : null
-  default_key  = false
+  organization  = var.org
+  teams         = var.teams
+  name          = var.project_name
+  slug          = var.project_slug != null ? var.project_slug : null
+  platform      = var.platform != null ? var.platform : null
+  resolve_age   = var.project_resolve_age != null ? var.project_resolve_age : null
+  default_key   = false
   default_rules = var.default_rules
 }
 

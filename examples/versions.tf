@@ -3,7 +3,7 @@ terraform {
 
   required_providers {
     sentry = {
-      source  = "jianyuan/sentry"
+      source = "jianyuan/sentry"
     }
   }
 }

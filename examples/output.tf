@@ -1,9 +1,9 @@
 output "organization" {
-    value = module.example_project.organization
+  value = module.example_project.organization
 }
 output "project" {
-    value = module.example_project.project
+  value = module.example_project.project
 }
 output "keys" {
-    value = [module.example_project.keys]
+  value = [module.example_project.keys]
 }
