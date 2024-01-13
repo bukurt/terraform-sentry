@@ -14,3 +14,9 @@ variable "sentry_base_url" {
   type        = string
   default     = "https://sentry.io/api/"
 }
+
+variable "print_keys" {
+  description = "Print keys as clear text or masked"
+  type = bool
+  default = false
+}
