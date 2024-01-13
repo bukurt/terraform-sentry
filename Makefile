@@ -23,7 +23,7 @@ dev_setup: .git/hooks/pre-push
 
 .SILENT: .git/hooks/pre-push
 .git/hooks/pre-push:
-	( cd .git/hooks && ln -s ../../tools/githooks/pre-push )
+	( cd .git/hooks && ln -s ../tools/githooks/pre-push )
 
 .SILENT: next_major
 next_major:
