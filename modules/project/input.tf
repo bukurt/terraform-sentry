@@ -69,8 +69,7 @@ variable "key_rate_limits" {
   }
 }
 
-# output
-
+# output variables
 variable "print_keys" {
   description = "Print keys as clear text or masked"
   type        = bool

@@ -2,6 +2,9 @@
 
 ## This document outlines the changes being added per new tag. For the recommended format of adding changes to the changelog please see: [keepchangelog.com](https://keepachangelog.com/en/1.0.0/)
 
+## [2.1.2] - 2024-01-13
+* Minor cosmetic fixes
+
 ## [2.1.1] - 2024-01-13
 * Terraform fmt
 

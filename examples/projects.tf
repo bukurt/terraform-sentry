@@ -1,6 +1,6 @@
 module "example_project" {
   org          = var.org # your organization slug
-  source       = "git@github.com:bukurt/terraform-sentry.git//modules/project?ref=v2.1.0"
+  source       = "git@github.com:bukurt/terraform-sentry.git//modules/project?ref=v2.1.2"
   teams        = ["all-developers"]
   project_name = "example-project"
   platform     = "kotlin"
