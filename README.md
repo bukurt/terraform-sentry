@@ -1,7 +1,7 @@
 # Sentry Terraform Modules
-This repository contains several Terraform modules for Sentry
+This repository contains Terraform modules for Sentry
 
-# Development
+## Development
 - Make development in new branch
 - Update `CHANGELOG.md`file`
 - Create Pull Request
