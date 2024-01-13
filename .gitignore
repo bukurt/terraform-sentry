@@ -1,0 +1,13 @@
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
+.terraform-version
+*.terraform.lock.hcl
+.idea/
+.vscode/
+*.iml
+secret.tfvars
+.python-version
+kubeconfig_*
+*.zip
+*~

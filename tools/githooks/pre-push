@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Make sure to run below command while **under project root folder**.
+# If you already have a .git/hooks folder you should delete (or rename) it.
+# ln -s -f ../tools/githooks/ .git/hooks
+
+set -e
+
+RESULT=0
+DEFAULT_BRANCH="master"
+current_branch=`git rev-parse --abbrev-ref HEAD`
+
+if [ $current_branch = $DEFAULT_BRANCH ]; then
+    echo -e "\033[0;31m"
+    echo "Refusing to push $DEFAULT_BRANCH branch."
+    echo -e "If you're fire-fighting, please use \033[0m--no-verify\033[0;31m to bypass this warning."
+    echo "This will also bypass local tests being run. You have been warned."
+    echo -e "\033[0m"
+    exit 1
+fi
+
+[ ${RESULT} -ne 0 ] && exit 1
+exit 0
