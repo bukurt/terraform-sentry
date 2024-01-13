@@ -1,3 +1,7 @@
+data "sentry_organization" "main" {
+  slug = var.org
+}
+
 resource "sentry_project" "sentry_project" {
   organization = var.org
   teams        = var.teams
@@ -5,7 +9,8 @@ resource "sentry_project" "sentry_project" {
   slug         = var.project_slug != null ? var.project_slug : null
   platform     = var.platform != null ? var.platform : null
   resolve_age  = var.project_resolve_age != null ? var.project_resolve_age : null
-  # default_key  = false
+  default_key  = false
+  default_rules = var.default_rules
 }
 
 resource "sentry_key" "keys" {
